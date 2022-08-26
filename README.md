@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+This repository marks the beggining of two journeys:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+One is my career as a web developer. More specifically, where will I find myself in 2, 5, 10 years? Will I even go on that long or what if go on for the rest of my life? Who knows and surprise is one of life's many pleasures, so all I can do is take it in stride with my arms open. All I know right now - is that this project is the first thing I will accomplish as a solo developer. No academic tutors, no classmates to share answers with, just me and the web. Success within an academic environment does not prove ones capability of achievment, only achievments do and those are earned through actions and effort. This shall be my first.
 
-## Available Scripts
+The second journey is the project itself. Let me talk about it for a second (to perhaps 1-2 people who will have the desire to read this). I, being a proggress-motivated individual with a ever-growing bond to conceiving creative ideas and imlementations, have over-planned this project before it even began, as per usual... 
+Whilst many consider overthinking a bad tendency, I think of it as a mere tool. Sorry to get political but this metaphor begs it: A gun is a chunk of metal asssembled in a lethal way and the decisive factor of whether its good or bad is its use. Guns are bad when used to kill people, but good for hunting purposes. 
+As always - it is a matter of perspective, and my perspective on the fate of this project is that overthinking is not only acceptable under the circumstances but even encouraged. 
 
-In the project directory, you can run:
+This is a website for my dream. A creative outlet that I am attached to emotionally, like a father is to his child. Music is something I changed my whole life for and it is a gateway to peep inside the most truthful, honest me there is. And if I am so excited for a project that partially represents my dream and a huge part of my identity - why not indulge myself and dive into it headfirst? 
 
-### `npm start`
+- A chatting screen for fans to discuss songs? Why the hell not?
+- The ability to play songs whilst on the website? Lets do it!
+- A fully functional/ statistic tracking online shop with merchandise? Lets open YouTube and learn how to do it!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Potential is limitless and in a project where I get to make something for the band I am so deeply invested in - I am my own judge, my own boss and my own god too.
+With lightning blasting from my fingertips - this is the place I will attempt the impossible just because I want to.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#UPDATES
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8/24/22 - created react app, wrote a heart felt readme (which is likely to change at some point). TLDR - prepared the project for starting when I will be inspired.
