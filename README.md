@@ -20,3 +20,9 @@ With lightning blasting from my fingertips - this is the place I will attempt th
 8/24/22 - created react app, wrote a heart felt readme (which is likely to change at some point). TLDR - prepared the project for starting when I will be inspired.
 
 8/25/22 - uploaded stock photos of the logo and changed some of the default react app settings. Currently in planning and discussion phase about where to take this as there are a few approaches in my mind.
+
+10/2/22 - Had a team meeting with the lads, we had our disagreements but came to a rough plan of action. Must-have functionality was named and listed, that needs to be developed in a rough form. And then, we can go from there. Simple, yet very artist-esque. We shall see how that goes but this is still, a primarily learning endeavor. 
+
+After some time off I was inspired to start the same day. I laid out a skeletal structure dividing the project into "digestible pieces", to start assembling it bit by bit. Starting with the routes and keeping the virtual "path" a user might take in mind - I created all of the components and worked on routing them. 
+
+Tomorrow, I also plan to contact my designer friend to aid me with a design/styling idea I had for the home page / background images. Will update on that.
