@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, Route} from 'react'
+import {Route, Routes} from 'react-router-dom'
 import Home from './Home/Home'
 import PhotoGallery from './Pages/PhotoGallery'
 import VideoGallery from './Pages/VideoGallery'
@@ -10,9 +10,9 @@ import Contact from './Pages/Contact'
 import AboutUs from './Pages/AboutUs'
 import Art from './Pages/Art'
 
-function Routes() {
+function Routing() {
   return (
-    <Switch>
+    <Routes>
 
       <Route exact path="/">
         <Home />
@@ -50,6 +50,10 @@ function Routes() {
 
       </Route>
 
+      <Route path="/instigator-of-unexpected-change/documentary">
+
+      </Route>
+
       <Route path="/instigator-of-unexpected-change/:song_name">
 
       </Route>
@@ -58,8 +62,8 @@ function Routes() {
         <NotFound />
       </Route>
 
-    </Switch>
+    </Routes>
   )
 }
 
-export default Routes
+export default Routing
