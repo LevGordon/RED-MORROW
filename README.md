@@ -18,3 +18,5 @@ With lightning blasting from my fingertips - this is the place I will attempt th
 #UPDATES
 
 8/24/22 - created react app, wrote a heart felt readme (which is likely to change at some point). TLDR - prepared the project for starting when I will be inspired.
+
+8/25/22 - uploaded stock photos of the logo and changed some of the default react app settings. Currently in planning and discussion phase about where to take this as there are a few approaches in my mind.
