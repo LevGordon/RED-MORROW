@@ -1,14 +1,16 @@
 import React from 'react'
 import {Route, Routes} from 'react-router-dom'
-import Home from './Home/Home'
-import PhotoGallery from './Pages/PhotoGallery'
-import VideoGallery from './Pages/VideoGallery'
-import NotFound from './NotFound'
-import Music from './Pages/Music'
-import Merch from './Pages/Merch'
-import Contact from './Pages/Contact'
-import AboutUs from './Pages/AboutUs'
-import Art from './Pages/Art'
+
+
+import Home from './Home'
+import PhotoGallery from '../Pages/PhotoGallery'
+import VideoGallery from '../Pages/VideoGallery'
+import NotFound from '../NotFound'
+import Music from '../Pages/Music'
+import Merch from '../Pages/Merch'
+import Contact from '../Pages/Contact'
+import AboutUs from '../Pages/AboutUs'
+import Art from '../Pages/Art'
 
 function Routing() {
   return (

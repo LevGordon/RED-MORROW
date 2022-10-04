@@ -1,23 +1,23 @@
 import React from 'react'
-import Footer from "../Footer";
-import NavBar from "../NavBar";
-import Routes from "../Routing";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
+import Routes from "./Routing";
 
 function Layout() {
   return (
     <div className='container'>
-        <div className='head-main-foot'>
-            <header>
+        <div>
+            <div>
                 <NavBar />
-            </header>
-            <main>
+            </div>
+            <div>
                 <Routes />
-            </main>
-            <footer>
+            </div>
+            <div>
                 <Footer />
-            </footer>
+            </div>
+            
         </div>
-
 
     </div>
   )

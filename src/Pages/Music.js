@@ -2,7 +2,9 @@ import React from 'react'
 
 function Music() {
   return (
-    <div>Music</div>
+    <div>
+      <h1> MUSIC </h1>
+    </div>
   )
 }
 
