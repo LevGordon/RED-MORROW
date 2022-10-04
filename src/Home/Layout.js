@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from "./Footer";
 import NavBar from "./NavBar";
-import Routes from "./Routing";
+import Routing from "./Routing";
 
 function Layout() {
   return (
@@ -10,14 +10,15 @@ function Layout() {
             <div>
                 <NavBar />
             </div>
-            <div>
-                <Routes />
-            </div>
+            {/* <div>
+                <Routing />
+            </div> */}
             <div>
                 <Footer />
             </div>
             
         </div>
+        <h1>LAYOUT</h1>
 
     </div>
   )

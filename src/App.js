@@ -1,15 +1,13 @@
 import "./App.css";
 import React from "react";
 import Layout from "./Home/Layout";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/">
+    <React.Fragment>
         <Layout />
-      </Route>
-    </Routes>
+        <h1>APP</h1>
+    </React.Fragment>
   );
 }
 
