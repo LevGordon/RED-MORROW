@@ -26,3 +26,5 @@ With lightning blasting from my fingertips - this is the place I will attempt th
 After some time off I was inspired to start the same day. I laid out a skeletal structure dividing the project into "digestible pieces", to start assembling it bit by bit. Starting with the routes and keeping the virtual "path" a user might take in mind - I created all of the components and worked on routing them. 
 
 Tomorrow, I also plan to contact my designer friend to aid me with a design/styling idea I had for the home page / background images. Will update on that.
+
+10/3/22 - I got in touch with my designer friend but he couldn't talk for long. I briefed him on the ideas and what I need him to do - work will begin tomorrow. Today, I mainly worked on my final capstone for thinkful. But Red Morrow-wise, I mainly focused on getting the routes in order and by the end of the day not quite achieving everything. No biggie - I just need to educate myself on the newer Routes (previously Switch) syntax that came in the newer version of React.
