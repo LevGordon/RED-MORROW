@@ -7,15 +7,15 @@ function Layout() {
   return (
     <div className='container'>
         <div>
-            <div>
+            <header>
                 <NavBar />
-            </div>
-            {/* <div>
+            </header>
+            <main>
                 <Routing />
-            </div> */}
-            <div>
+            </main>
+            <footer>
                 <Footer />
-            </div>
+            </footer>
             
         </div>
         <h1>LAYOUT</h1>

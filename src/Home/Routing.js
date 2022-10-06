@@ -16,53 +16,20 @@ function Routing() {
   return (
     <Routes>
 
-      <Route exact path="/">
-        <Home />
-      </Route>
+      <Route exact path="/" element={<Home />}/>
+      <Route path="/photo-gallery" element={<PhotoGallery />} />
+      <Route path="/video-gallery" element={<VideoGallery />} />
+      <Route path="/music" element={<Music />} />
+      <Route path="/shop" element={<Merch />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/art" element={<Art />} />
+      <Route path="/instigator-of-unexpected-change" element={''} />
+      <Route path="/instigator-of-unexpected-change/documentary" element={''} />
+      <Route path="/instigator-of-unexpected-change/:song_name" element={''} />
 
-      <Route path="/photo-gallery">
-        <PhotoGallery  />
-      </Route>
+      <Route path='*' element={<NotFound />} />
 
-      <Route exact path="/video-gallery">
-        <VideoGallery   />
-      </Route>
-
-      <Route path="/music">
-        <Music />
-      </Route>
-
-      <Route path="/merch">
-        <Merch />
-      </Route>
-
-      <Route path="/contact">
-        <Contact />
-      </Route>
-
-      <Route path="/about">
-        <AboutUs />
-      </Route>
-
-      <Route path="/art">
-        <Art />
-      </Route>
-
-      <Route path="/instigator-of-unexpected-change">
-
-      </Route>
-
-      <Route path="/instigator-of-unexpected-change/documentary">
-
-      </Route>
-
-      <Route path="/instigator-of-unexpected-change/:song_name">
-
-      </Route>
-
-      <Route>
-        <NotFound />
-      </Route>
 
     </Routes>
   )
