@@ -23,7 +23,7 @@ function NavBar() {
     <div className="navbar-container">
       <div className="navbar-left">
         <div className="navbar-menu">
-          <button>Menu</button>
+          <button className="navbar-button">Menu</button>
         </div>
         <div className="navbar-logo">
           <img
@@ -35,16 +35,16 @@ function NavBar() {
       </div>
       <div className="navbar-right">
         <div className="navbar-music">
-          <button>Music</button>
+          <button className="navbar-button">Music</button>
         </div>
         <div className="navbar-merch">
-          <button>Merch</button>
+          <button className="navbar-button">Merch</button>
         </div>
         <div className="navbar-contact">
-          <button>Contact</button>
+          <button className="navbar-button">Contact</button>
         </div>
         <div className="navbar-about-us">
-          <button>About Us</button>
+          <button className="navbar-button">About Us</button>
         </div>
       </div>
     </div>
@@ -63,10 +63,10 @@ function NavBar() {
       </div>
       <div className="navbar-right">
         <div className="navbar-music">
-          <button>Music</button>
+          <button className="navbar-button">Music</button>
         </div>
         <div className="navbar-menu">
-          <button>Menu</button>
+          <button className="navbar-button">Menu</button>
         </div>
       </div>
     </div>

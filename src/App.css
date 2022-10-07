@@ -3,6 +3,7 @@
 
 
 /* NavBar */
+/* NavBar */
 
 .navbar-container {
     display: flex;
@@ -18,7 +19,23 @@
 }
 
 .navbar-rm-logo-img {
-    max-height: 50px;
+    max-height: 55px;
     margin: 0;
     padding: 0;
+}
+
+.navbar-button {
+    border: 1px solid red;
+
+    padding: 10px;
+    margin: 0 5px 0 5px;
+}
+
+
+/* NavBar */
+/* NavBar */
+
+
+@media only screen and (min-width: 768px) {
+
 }
