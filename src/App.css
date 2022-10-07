@@ -1,0 +1,24 @@
+
+/* MOBILE */
+
+
+/* NavBar */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-rm-logo-img {
+    max-height: 50px;
+    margin: 0;
+    padding: 0;
+}
