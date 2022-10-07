@@ -9,7 +9,6 @@ root.render(
   <React.StrictMode>
     <Router>
       <App />
-      <h1>INDEX</h1>
     </Router>
   </React.StrictMode>
 );

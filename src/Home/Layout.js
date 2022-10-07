@@ -18,8 +18,6 @@ function Layout() {
             </footer>
             
         </div>
-        <h1>LAYOUT</h1>
-
     </div>
   )
 }

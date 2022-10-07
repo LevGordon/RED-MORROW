@@ -6,7 +6,6 @@ function App() {
   return (
     <React.Fragment>
         <Layout />
-        <h1>APP</h1>
     </React.Fragment>
   );
 }
