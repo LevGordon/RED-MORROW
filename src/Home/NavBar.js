@@ -22,6 +22,17 @@ function NavBar() {
 
   console.log(height, width)
 
+  const NavBarLogo = (
+    <div className="navbar-logo">
+          <img
+            src={rmLogoColor}
+            alt="Red Morrow Official Logo"
+            className="navbar-rm-logo-img"
+            onClick={() => Navigate("/")}
+          />
+        </div>
+  )
+
 
   const desktopNavBar = (
     <div className="navbar-container">
@@ -29,13 +40,7 @@ function NavBar() {
         <div className="navbar-menu">
           <button className="navbar-button">Menu</button>
         </div>
-        <div className="navbar-logo">
-          <img
-            src={rmLogoColor}
-            alt="Red Morrow Official Logo"
-            className="navbar-rm-logo-img"
-          />
-        </div>
+        {NavBarLogo}
       </div>
       <div className="navbar-right">
         <div className="navbar-music">
@@ -57,13 +62,7 @@ function NavBar() {
   const mobileNavBar = (
     <div className="navbar-container">
       <div className="navbar-left">
-        <div className="navbar-logo">
-          <img
-            src={rmLogoColor}
-            alt="Red Morrow Official Logo"
-            className="navbar-rm-logo-img"
-          />
-        </div>
+        {NavBarLogo}
       </div>
       <div className="navbar-right">
         <div className="navbar-music">
