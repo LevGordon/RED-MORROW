@@ -9,7 +9,7 @@ function Footer() {
       <section className="footer-subcription">
         <div className="subscribe-wrap">
           <p className="footer-subscription-heading">
-            Sign up for the Red Morrow newsletter, to receive news about our latest developments
+            Sign up for the Red Morrow newsletter!
           </p>
           <p className="footer-subscription-text">
             You can unsubscribe at any time.
@@ -33,6 +33,7 @@ function Footer() {
             <Link to="/instigator-of-unexpected-change">Instigator of unexpected change</Link>
             <Link to="/instigator-of-unexpected-change/documentary">Documentary</Link>
             <Link to="/#">Mourn the Living music video</Link>
+            <Link to="/#">3D Modelled lyric videos</Link>
           </div>
           <div className="footer-link-items">
             <h2>MEDIA</h2>
@@ -62,7 +63,7 @@ function Footer() {
                 <img
             src={rmLogoColor}
             alt="Red Morrow Official Logo"
-            className="navbar-rm-logo-img"
+            className="footer-rm-logo-img"
           />
                 </Link>
             </div>
