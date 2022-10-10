@@ -32,3 +32,7 @@ Tomorrow, I also plan to contact my designer friend to aid me with a design/styl
 10/5/22 - fixed routing, not enough time for anything else today.
 
 10/6/22 - started working on a NavBar. Made a primitive, yet responsive version. Learned something new today with window.innerWidth and window.innerHeight. I got the design plan laid out, will make the links work tomorrow.
+
+10/9/22 - made a footer with working links. Nothing too fancy, just a simple nav-oriented footer to help redirect people upon scrolling all the way down. I also wanted to add links to places outside of the webiste like "Mourn the living music video". This should potentially add flow to the viewer count. Nothing much to say except for - primitive footer done. 
+
+At this point in time I am developing only the bare structure of the website. I want it to be displayable enough for my non-technical bandmates to give me relevant feedback. Looks first - functionality later. I don't like this, but this is a band website and I have to do what I believe is best for the collective.
