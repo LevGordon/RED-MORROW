@@ -30,3 +30,5 @@ Tomorrow, I also plan to contact my designer friend to aid me with a design/styl
 10/3/22 - I got in touch with my designer friend but he couldn't talk for long. I briefed him on the ideas and what I need him to do - work will begin tomorrow. Today, I mainly worked on my final capstone for thinkful. But Red Morrow-wise, I mainly focused on getting the routes in order and by the end of the day not quite achieving everything. No biggie - I just need to educate myself on the newer Routes (previously Switch) syntax that came in the newer version of React.
 
 10/5/22 - fixed routing, not enough time for anything else today.
+
+10/6/22 - started working on a NavBar. Made a primitive, yet responsive version. Learned something new today with window.innerWidth and window.innerHeight. I got the design plan laid out, will make the links work tomorrow.
