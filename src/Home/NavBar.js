@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import rmLogoColor from "../photos/rmLogoColor.png";
 
 function useWindowSize() {
@@ -17,6 +18,9 @@ function useWindowSize() {
 
 function NavBar() {
   const [height, width] = useWindowSize();
+  const Navigate = useNavigate()
+
+  console.log(height, width)
 
 
   const desktopNavBar = (
@@ -35,16 +39,16 @@ function NavBar() {
       </div>
       <div className="navbar-right">
         <div className="navbar-music">
-          <button className="navbar-button">Music</button>
+          <button className="navbar-button" onClick={() => Navigate("/music")}> Music</button>
         </div>
         <div className="navbar-merch">
-          <button className="navbar-button">Merch</button>
+          <button className="navbar-button" onClick={() => Navigate("/shop")}>Merch</button>
         </div>
         <div className="navbar-contact">
-          <button className="navbar-button">Contact</button>
+          <button className="navbar-button" onClick={() => Navigate("/contact")}>Contact</button>
         </div>
         <div className="navbar-about-us">
-          <button className="navbar-button">About Us</button>
+          <button className="navbar-button" onClick={() => Navigate("/about")}>About Us</button>
         </div>
       </div>
     </div>
@@ -63,7 +67,7 @@ function NavBar() {
       </div>
       <div className="navbar-right">
         <div className="navbar-music">
-          <button className="navbar-button">Music</button>
+          <button className="navbar-button" onClick={() => Navigate("/music")}>Music</button>
         </div>
         <div className="navbar-menu">
           <button className="navbar-button">Menu</button>
