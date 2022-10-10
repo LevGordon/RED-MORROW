@@ -30,28 +30,29 @@ function Footer() {
       <div className="footer-links">
           <div className="footer-link-items">
             <h2>INSTIGATOR</h2>
-            <Link to="/sign-up">Instigator of unexpected change</Link>
-            <Link to="/">Documentary</Link>
+            <Link to="/instigator-of-unexpected-change">Instigator of unexpected change</Link>
+            <Link to="/instigator-of-unexpected-change/documentary">Documentary</Link>
+            <Link to="/#">Mourn the Living music video</Link>
           </div>
           <div className="footer-link-items">
             <h2>MEDIA</h2>
-            <Link to="/">Music</Link>
-            <Link to="/">Photos</Link>
-            <Link to="/">Videos</Link>
-            <Link to="/">Art</Link>
+            <Link to="/music">Music</Link>
+            <Link to="/photo-gallery">Photos</Link>
+            <Link to="/video-gallery">Videos</Link>
+            <Link to="/art">Art</Link>
           </div>
           <div className="footer-link-items">
             <h2>ABOUT</h2>
-            <Link to="/">About Us</Link>
-            <Link to="/">Contact</Link>
-            <Link to="/">Merch Shop</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/shop">Merch Shop</Link>
           </div>
           <div className="footer-link-items">
             <h2>SOCIALS</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">YouTube</Link>
-            <Link to="/">Twitter</Link>
+            <Link to="/#">Instagram</Link>
+            <Link to="/#">Facebook</Link>
+            <Link to="/#">YouTube</Link>
+            <Link to="/#">Twitter</Link>
           </div>
       </div>
       <section className="social-media">
@@ -66,57 +67,12 @@ function Footer() {
                 </Link>
             </div>
             <small className="website-rights">Red Morrow © 2022</small>
-            <div className="social-icons">
-                <Link to="/" target="_blank" aria-label="Facebook" className="social-icon-link facebook">
-                    <i className="fab fa-facebook-f" />
-                </Link>
-                <Link
-              className='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i className='fab fa-instagram' />
-            </Link>
-            <Link
-              className='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i className='fab fa-youtube' />
-            </Link>
-            <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i className='fab fa-twitter' />
-            </Link>
-            <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i className='fab fa-linkedin' />
-            </Link>
-            </div>
         </div>
       </section>
     </div>
   );
 
-
-
-  return (
-    <div>
-        <h1> FOOTER </h1>
-        {footerElement}
-        
-    </div>
-  )
+  return footerElement
 }
 
 export default Footer
