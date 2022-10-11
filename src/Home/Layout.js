@@ -13,7 +13,7 @@ function Layout() {
             <main>
                 <Routing />
             </main>
-            <footer>
+            <footer className='footer-main-container'>
                 <Footer />
             </footer>
             

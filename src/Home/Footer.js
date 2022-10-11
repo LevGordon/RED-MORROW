@@ -22,7 +22,7 @@ function Footer() {
                 name="email"
                 placeholder="Your Email Here"
               />
-              <button >Subscribe!</button>
+              <button >Subscribe</button>
             </form>
           </div>
         </div>
