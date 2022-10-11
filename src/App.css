@@ -199,6 +199,7 @@
 .merch-main-container {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(90deg, rgb(11, 0, 11) 0%, rgb(175, 107, 204) 20%, rgb(175, 107, 204) 80%,  rgb(23, 0, 22) 100%);
 }
 
 .merch-triple-stack {
@@ -218,8 +219,30 @@
 .merch-item-card {
     display: flex;
     flex-direction: column;
+    padding: 0 10px 0 10px;
     border: 1px #ef4343 solid;
 }
+
+.merch-item-img {
+    max-width: 300px;
+}
+
+.merch-item-title {
+    display: flex;
+    justify-content: center;
+}
+
+.merch-item-price {
+    display: flex;
+    justify-content: center;
+}
+
+.merch-item-p {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .merch-item-card h1, h2, h3, h4, h5, p {
     color: black;

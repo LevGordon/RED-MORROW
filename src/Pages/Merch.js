@@ -5,8 +5,7 @@ import MerchCardInfo from './MerchItemInfo'
 function Merch() {
   const {ciconiaBlack, happyLifeWhite, instigatorPurple} = MerchCardInfo
 
-
-  return (
+  const desktopMerchShop = (
     <div className='merch-main-container'>
       <div className='merch-triple-stack'>
         <MerchItemCard name={ciconiaBlack.name} image={ciconiaBlack.image} color={ciconiaBlack.color} song={ciconiaBlack.song} sizes={ciconiaBlack.sizes} price={ciconiaBlack.price} />
@@ -18,6 +17,13 @@ function Merch() {
       </div>
     </div>
   )
+
+  // const mobileMerchShop = (
+
+  // )
+
+
+  return desktopMerchShop
 }
 
 export default Merch

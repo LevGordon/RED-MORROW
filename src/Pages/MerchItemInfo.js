@@ -2,24 +2,21 @@
 const MerchItemInfo = {
   happyLifeWhite: {
     name: "Happy Life T-Shirt",
-    image: "",
-    color: "white",
+    image: "../photos/example-shirt.webp",
     song: "Happy Life",
     sizes: "S-XXL",
     price: "$15.00",
   },
   ciconiaBlack: {
     name: "Ciconia T-Shirt",
-    image: "",
-    color: "black",
+    image: "../photos/example-shirt.webp",
     song: "Out Loud, Pro re nata",
     sizes: "S-XXL",
     price: "$15.00",
   },
   instigatorPurple: {
-    name: "Instigator of Unexpected Change T-Shirt",
-    image: "",
-    color: "purple",
+    name: "Instigator... T-Shirt",
+    image: "../photos/example-shirt.webp",
     song: "Instigator of Unexpected Change",
     sizes: "S-XXL",
     price: "$20.00",
