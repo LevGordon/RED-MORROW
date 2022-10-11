@@ -25,14 +25,17 @@ function NavBar() {
   console.log(height, width);
 
   const NavBarLogo = (
-    <div className="navbar-logo">
-      <img
-        src={rmLogoColor}
-        alt="Red Morrow Official Logo"
-        className="navbar-rm-logo-img"
-        onClick={() => Navigate("/")}
-      />
-    </div>
+    
+      <div className="navbar-logo">
+        <Link to="/" className="social-logo">
+        <img
+          src={rmLogoColor}
+          alt="Red Morrow Official Logo"
+          className="navbar-rm-logo-img"
+          onClick={() => Navigate("/")}
+        />
+        </Link>
+      </div>
   );
 
   const desktopMenu = (
@@ -119,7 +122,7 @@ function NavBar() {
         </div>
       </div>
       <div className="navbar-menu-clicked">
-        {menuIsClicked === true ? desktopMenu : <></>}
+        {menuIsClicked ? desktopMenu : <></>}
       </div>
     </div>
   );
