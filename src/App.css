@@ -189,6 +189,78 @@
 /* Footer */
 
 
+
+
+
+
+/* Merch Shop */
+/* Merch Shop */
+
+.merch-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.merch-triple-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+
+}
+
+
+
+
+
+.merch-item-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px #ef4343 solid;
+}
+
+.merch-item-card h1, h2, h3, h4, h5, p {
+    color: black;
+}
+
+.merch-item-card h1, h4 {
+    color: black;
+}
+
+
+
+
+
+/* Merch Shop */
+/* Merch Shop */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 768px) {
 
 /* Footer */
