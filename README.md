@@ -38,3 +38,5 @@ Tomorrow, I also plan to contact my designer friend to aid me with a design/styl
 At this point in time I am developing only the bare structure of the website. I want it to be displayable enough for my non-technical bandmates to give me relevant feedback. Looks first - functionality later. I don't like this, but this is a band website and I have to do what I believe is best for the collective.
 
 10/10/22 - adjusted css of the footer, adjusted css of the navbar. Added an onClick to the "menu" button which triggers a state-change and shows a menu of things to click on. For now the design is the same as the footer, but I will work on that tomorrow.
+
+10/11/22 - created the majority of the /shop page. Since we don't have a way of selling shirts abroad or even nationally - the best we can offer is to showcase what we have and invite the people viewing to purchase these things at our next shows. We also offer deliveries in the LA / San Diego area which were mentioned and a link to /contact was added. I also worked on the footer and fixed a few bugs alongside settling on a simpler design and implementing those changes.
