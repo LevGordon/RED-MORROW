@@ -212,8 +212,19 @@
 
 }
 
+.merch-item-container {
+    background-color: wheat;
+    padding: 10px 0 10px 0;
+}
 
+.merch-apology-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 50px;
+}
 
 
 .merch-item-card {
