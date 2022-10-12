@@ -8,10 +8,7 @@ function Footer() {
       <section className="footer-subcription">
         <div className="subscribe-wrap">
           <p className="footer-subscription-heading">
-            Sign up for the Red Morrow newsletter!
-          </p>
-          <p className="footer-subscription-text">
-            You can unsubscribe at any time.
+            Sign up to the Red Morrow newsletter!
           </p>
           <div className="input-areas">
             <form>
@@ -28,9 +25,9 @@ function Footer() {
       </section>
       <div className="footer-links">
         <div className="footer-link-items">
-          <h2>INSTIGATOR</h2>
+          <h2 className="footer-instigator">INSTIGATOR</h2>
           <Link to="/instigator-of-unexpected-change">
-            Instigator of unexpected change
+            Instigator of Unexpected Change
           </Link>
           <Link to="/instigator-of-unexpected-change/documentary">
             Documentary
@@ -56,13 +53,12 @@ function Footer() {
           <Link to="/#">Instagram</Link>
           <Link to="/#">Facebook</Link>
           <Link to="/#">YouTube</Link>
-          <Link to="/#">Twitter</Link>
+          <Link to="/#">Twitch</Link>
         </div>
       </div>
-      <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link to="/" className="social-logo">
+            <Link to="/">
               <img
                 src={rmLogoColor}
                 alt="Red Morrow Official Logo"
@@ -70,11 +66,10 @@ function Footer() {
               />
             </Link>
           </div>
-          <div className="website-rights-wrap">
+          <div>
             <small className="website-rights">Red Morrow © 2022</small>
-          </div>
+          </div>  
         </div>
-      </section>
     </div>
   );
 
