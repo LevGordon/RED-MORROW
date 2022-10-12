@@ -2,9 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MerchItemCard from "./MerchItemCard";
 import MerchCardInfo from "./MerchItemInfo";
+import useWindowSize from "../utils/useWindowSize";
 
 function Merch() {
   const { ciconiaBlack, happyLifeWhite, instigatorPurple } = MerchCardInfo;
+  const [width, height] = useWindowSize()
+
+  console.log(width, height)
 
   const desktopMerchShop = (
     <div className="merch-item-container">
@@ -38,9 +42,37 @@ function Merch() {
     </div>
   );
 
-  // const mobileMerchShop = (
+  const mobileMerchShop = (
+    <div className="merch-item-container">
+      <div className="merch-triple-stack">
+      <MerchItemCard
+          name={ciconiaBlack.name}
+          image={ciconiaBlack.image}
+          color={ciconiaBlack.color}
+          song={ciconiaBlack.song}
+          sizes={ciconiaBlack.sizes}
+          price={ciconiaBlack.price}
+        />
+        <MerchItemCard
+          name={happyLifeWhite.name}
+          image={happyLifeWhite.image}
+          color={happyLifeWhite.color}
+          song={happyLifeWhite.song}
+          sizes={happyLifeWhite.sizes}
+          price={happyLifeWhite.price}
+        />
+        <MerchItemCard
+          name={instigatorPurple.name}
+          image={instigatorPurple.image}
+          color={instigatorPurple.color}
+          song={instigatorPurple.song}
+          sizes={instigatorPurple.sizes}
+          price={instigatorPurple.price}
+        />
+        </div>
+    </div>
 
-  // )
+  )
 
   return (
     <div className="merch-main-container">
@@ -63,7 +95,7 @@ function Merch() {
           Contact us <Link to="/contact"> HERE </Link> to purchase.
         </h3>
       </div>
-      <div>{desktopMerchShop}</div>
+      <div>{width > 768 ? desktopMerchShop : mobileMerchShop}</div>
     </div>
   );
 }

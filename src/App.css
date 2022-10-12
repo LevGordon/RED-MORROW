@@ -172,12 +172,9 @@
 
 .merch-triple-stack {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-
-
 }
 
 .merch-item-container {
@@ -289,5 +286,23 @@
 
 /* Footer */
 /* Footer */
+
+/* Merch Shop */
+/* Merch Shop */
+
+    .merch-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .merch-triple-stack {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+/* Merch Shop */
+/* Merch Shop */
 
 }
