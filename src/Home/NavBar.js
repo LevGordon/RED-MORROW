@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import rmLogoColor from "../photos/rmLogoColor.png";
-
-function useWindowSize() {
-  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
-  useEffect(() => {
-    const handleResize = () => {
-      setSize([window.innerHeight, window.innerWidth]);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  return size;
-}
+import useWindowSize from "../utils/useWindowSize";
 
 function NavBar() {
   const [height, width] = useWindowSize();
@@ -25,17 +12,16 @@ function NavBar() {
   console.log(height, width);
 
   const NavBarLogo = (
-    
-      <div className="navbar-logo">
-        <Link to="/" className="social-logo">
+    <div className="navbar-logo">
+      <Link to="/" className="social-logo">
         <img
           src={rmLogoColor}
           alt="Red Morrow Official Logo"
           className="navbar-rm-logo-img"
           onClick={() => Navigate("/")}
         />
-        </Link>
-      </div>
+      </Link>
+    </div>
   );
 
   const desktopMenu = (
@@ -129,15 +115,20 @@ function NavBar() {
 
   const mobileNavBar = (
     <div className="navbar-container">
-      <div className="navbar-left">{NavBarLogo}</div>
-      <div className="navbar-right">
-        <div className="navbar-music">
-          <button className="navbar-button" onClick={() => Navigate("/music")}>
-            Music
-          </button>
-        </div>
-        <div className="navbar-menu">
-          <button className="navbar-button">Menu</button>
+      <div className="navbar-leftright-wrap">
+        <div className="navbar-left">{NavBarLogo}</div>
+        <div className="navbar-right">
+          <div className="navbar-music">
+            <button
+              className="navbar-button"
+              onClick={() => Navigate("/music")}
+            >
+              Music
+            </button>
+          </div>
+          <div className="navbar-menu">
+            <button className="navbar-button">Menu</button>
+          </div>
         </div>
       </div>
     </div>
