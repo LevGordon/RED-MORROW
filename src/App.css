@@ -8,7 +8,6 @@
     background: linear-gradient(90deg, rgb(8, 7, 7) 0%, rgb(6, 3, 3) 100%);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .navbar-leftright-wrap {
@@ -17,13 +16,7 @@
     justify-content: space-between;
 }
 
-.navbar-left {
-    display: flex;
-}
 
-.navbar-right {
-    display: flex;
-}
 
 .navbar-rm-logo-img {
     max-height: 55px;
@@ -248,12 +241,14 @@
 .contact-text-box {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
 }
 
 .contact-two-blocks {
     display: flex;
     flex-direction: column;
+    outline: 1px solid red;
+
+    padding: 5px
 }
 
 .contact-gmail-block {
@@ -309,7 +304,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    /* NavBar */
+/* NavBar */
 /* NavBar */
 
 .navbar-container {
@@ -319,6 +314,20 @@
 
 .navbar-rm-logo-img {
     max-height: 60px;
+}
+
+.navbar-leftright-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
 }
 
 /* NavBar */
@@ -351,5 +360,30 @@
 
 /* Merch Shop */
 /* Merch Shop */
+
+
+
+/* Contact */
+/* Contact */
+
+.contact-two-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.contact-image {
+    max-height: 200px;
+    padding: 5px;
+    margin-top: 10px;
+    outline: 1px solid red;
+}
+
+
+/* Contact */
+/* Contact */
+
+
 
 }

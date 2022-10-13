@@ -116,16 +116,10 @@ function NavBar() {
   const mobileNavBar = (
     <div className="navbar-container">
       <div className="navbar-leftright-wrap">
-        <div className="navbar-left">{NavBarLogo}</div>
+        <div className="navbar-left">
+          {NavBarLogo}
+        </div>
         <div className="navbar-right">
-          <div className="navbar-music">
-            <button
-              className="navbar-button"
-              onClick={() => Navigate("/music")}
-            >
-              Music
-            </button>
-          </div>
           <div className="navbar-menu">
             <button className="navbar-button">Menu</button>
           </div>
