@@ -1,4 +1,6 @@
 import React from "react";
+import gmailLogo from '../photos/gmail-logo.png'
+import instaLogo from '../photos/insta-logo.png'
 
 function Contact() {
   return (
@@ -9,13 +11,16 @@ function Contact() {
       </div>
       <div className="contact-two-blocks">
         <div className="contact-gmail-block">
-          <img src="../photos/gmail-logo.png" alt="Contact Red Morrow Gmail"/>
+          <img src={gmailLogo} className="contact-image" alt="Contact Red Morrow Gmail"/>
           <p>redmorrowband@gmail.com</p>
         </div>
         <div className="contact-insta-block">
-          <img src="../photos/insta-logo.png" alt="Contact Red Morrow Instagram"/>
-          <a href="https://www.instagram.com/redmorrowband/">@redmorrowband</a>
+          <img src={instaLogo} className="contact-image" alt="Contact Red Morrow Instagram"/>
+          <p>@redmorrowband</p>
         </div>
+      </div>
+      <div className="contact-appreciation-text">
+        <h4>We appreciate all messages! Say anything you want, ask anything you want!</h4>
       </div>
     </div>
   );

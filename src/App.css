@@ -237,6 +237,53 @@
 
 
 
+/* Contact */
+/* Contact */
+
+.contact-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.contact-two-blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-gmail-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-insta-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-appreciation-text {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image {
+    max-height: 185px;
+    padding: 5px;
+    outline: 1px solid red;
+}
+
+
+/* Contact */
+/* Contact */
 
 
 
