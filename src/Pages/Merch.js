@@ -91,7 +91,7 @@ function Merch() {
           <Link to="/"> SHOWS </Link>.
         </h3>
         <h3>
-          We ALSO offer deliveries around the LA and SD counties, in California.
+          We ALSO offer deliveries throughout the southern California region.
           Contact us <Link to="/contact"> HERE </Link> to purchase.
         </h3>
       </div>
