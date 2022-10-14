@@ -336,6 +336,11 @@
 /* Footer */
 /* Footer */
 
+.footer-link-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 /* Footer */

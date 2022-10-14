@@ -11,6 +11,7 @@ import Merch from '../Pages/Merch'
 import Contact from '../Pages/Contact'
 import AboutUs from '../Pages/AboutUs'
 import Art from '../Pages/Art'
+import Blog from '../Pages/Blog/Blog'
 
 function Routing() {
   return (
@@ -24,6 +25,7 @@ function Routing() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/art" element={<Art />} />
+      <Route path="/blog" element={<Blog />} />
       <Route path="/instigator-of-unexpected-change" element={''} />
       <Route path="/instigator-of-unexpected-change/documentary" element={''} />
       <Route path="/instigator-of-unexpected-change/:song_name" element={''} />

@@ -25,7 +25,7 @@ function Footer() {
       </section>
       <div className="footer-links">
         <div className="footer-link-items">
-          <h2 className="footer-instigator">INSTIGATOR</h2>
+          <h2 className="footer-instigator">OUR ALBUM</h2>
           <Link to="/instigator-of-unexpected-change">
             Instigator of Unexpected Change
           </Link>
@@ -47,6 +47,10 @@ function Footer() {
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/shop">Merch Shop</Link>
+        </div>
+        <div className="footer-link-items">
+          <h2>BLOG</h2>
+          <Link to="/blog">Most recent articles</Link>
         </div>
         <div className="footer-link-items">
           <h2>SOCIALS</h2>

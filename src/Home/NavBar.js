@@ -27,7 +27,7 @@ function NavBar() {
   const desktopMenu = (
     <div className="footer-links">
       <div className="footer-link-items">
-        <h2>INSTIGATOR</h2>
+        <h2>OUR ALBUM</h2>
         <Link to="/instigator-of-unexpected-change">
           Instigator of unexpected change
         </Link>
@@ -50,6 +50,10 @@ function NavBar() {
         <Link to="/contact">Contact</Link>
         <Link to="/shop">Merch Shop</Link>
       </div>
+      <div className="footer-link-items">
+          <h2>BLOG</h2>
+          <Link to="/blog">Most recent articles</Link>
+        </div>
       <div className="footer-link-items">
         <h2>SOCIALS</h2>
         <Link to="/#">Instagram</Link>
@@ -87,6 +91,14 @@ function NavBar() {
           <div className="navbar-merch">
             <button className="navbar-button" onClick={() => Navigate("/shop")}>
               Merch
+            </button>
+          </div>
+          <div className="navbar-blog">
+            <button
+              className="navbar-button"
+              onClick={() => Navigate("/blog")}
+            >
+              Blog
             </button>
           </div>
           <div className="navbar-contact">
