@@ -1,6 +1,7 @@
 import React from "react";
 import gmailLogo from '../photos/gmail-logo.png'
 import instaLogo from '../photos/insta-logo.png'
+import ContactUs from "./ContactEmailForm";
 
 function Contact() {
   return (
@@ -22,6 +23,7 @@ function Contact() {
       <div className="contact-appreciation-text">
         <h4>We appreciate all messages! Say anything you want, ask anything you want!</h4>
       </div>
+      <ContactUs />
     </div>
   );
 }
