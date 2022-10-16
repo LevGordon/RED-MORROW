@@ -274,6 +274,27 @@
     outline: 1px solid red;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-label-input-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.contact-form-send-button {
+    margin: 5px;
+    padding: 10px 25px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 
 /* Contact */
 /* Contact */
