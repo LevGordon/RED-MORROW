@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
+    const [emailSent, setEmailSent] = useState(false)
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,6 +25,12 @@ const ContactUs = () => {
       );
   };
 
+  const emailSentMessage = (
+    <div className="contact-email-was-sent">
+        <h3>Your email was sent!</h3>
+    </div>
+  )
+
 
   const contactForm = (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
@@ -40,12 +47,12 @@ const ContactUs = () => {
         <textarea name="message" />
       </div>
       <div>
-      <button type="submit" className="contact-form-send-button">Send</button>
+      <button type="submit" onClick={() => setEmailSent(true)} className="contact-form-send-button">Send</button>
       </div>
     </form>
   );
 
-  return contactForm
+  return emailSent ? emailSentMessage : contactForm;
 };
 
 export default ContactUs;
