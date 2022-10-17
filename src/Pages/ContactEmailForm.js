@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+
 const ContactUs = () => {
-    const [emailSent, setEmailSent] = useState(false)
+  const [emailSent, setEmailSent] = useState(false)
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -47,7 +48,7 @@ const ContactUs = () => {
         <textarea name="message" />
       </div>
       <div>
-      <button type="submit" onClick={() => setEmailSent(true)} className="contact-form-send-button">Send</button>
+      <button type="submit" onClick={() => setTimeout(() => setEmailSent(true), 1000)} className="contact-form-send-button">Send</button>
       </div>
     </form>
   );
