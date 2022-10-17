@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import rmLogoColor from "../photos/rmLogoColor.png";
 
+
 function Footer() {
   const footerElement = (
     <div className="footer-container">

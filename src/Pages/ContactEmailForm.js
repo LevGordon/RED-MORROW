@@ -1,6 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+const SERVICE = process.env.REACT_APP_EMAILJS_SERVICE
+const TEMPLATE = process.env.REACT_APP_EMAILJS_TEMPLATE
+const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+
 
 const ContactUs = () => {
   const [emailSent, setEmailSent] = useState(false)

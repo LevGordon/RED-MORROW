@@ -7,8 +7,7 @@ function Contact() {
   return (
     <div className="contact-main-container">
       <div className="contact-text-box">
-        <h2> You can contact us in two ways:</h2>
-
+        <h2> You can contact us through these:</h2>
       </div>
       <div className="contact-two-blocks">
         <div className="contact-gmail-block">
@@ -20,10 +19,13 @@ function Contact() {
           <p>@redmorrowband</p>
         </div>
       </div>
-      <div className="contact-appreciation-text">
-        <h4>We appreciate all messages! Say anything you want, ask anything you want!</h4>
+      <div className="contact-text-box">
+        <h2> Or send us a message directly through the site!</h2>
       </div>
       <ContactUs />
+      <div className="contact-appreciation-text">
+        <h3>We appreciate all messages! Say anything you want, ask anything you want!</h3>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ function NavBar() {
   const [height, width] = useWindowSize();
   const Navigate = useNavigate();
 
-  const [menuIsClicked, setMenuIsClicked] = useState([false]);
+  const [menuIsClicked, setMenuIsClicked] = useState(false);
 
   console.log(height, width);
 
