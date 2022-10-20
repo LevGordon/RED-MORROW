@@ -20,7 +20,7 @@ function Contact() {
         </div>
       </div>
       <div className="contact-text-box">
-        <h2> Or send us a message directly through the site!</h2>
+        <h2> Or send a message directly through the site!</h2>
       </div>
       <ContactUs />
       <div className="contact-appreciation-text">

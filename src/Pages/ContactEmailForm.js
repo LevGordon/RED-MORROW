@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Textarea from 'react-expanding-textarea'
+
 
 const SERVICE = process.env.REACT_APP_EMAILJS_SERVICE
 const TEMPLATE = process.env.REACT_APP_EMAILJS_TEMPLATE
@@ -15,7 +17,7 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        SERVICE,
+        "SERVICEAAAAAA",
         TEMPLATE,
         form.current,
         PUBLIC_KEY
@@ -36,20 +38,24 @@ const ContactUs = () => {
     </div>
   )
 
+  const contactFormValidation = () => {
+
+  }
+
 
   const contactForm = (
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <div className="contact-label-input-stack">
-        <label>Your Name</label>
-        <input type="text" name="user_name" />
+        <label className="contact-label">Your Name</label>
+        <input type="text" name="user_name" className="contact-input"/>
       </div>
       <div className="contact-label-input-stack">
-        <label>Your Email</label>
-        <input type="email" name="user_email" />
+        <label className="contact-label">Your Email</label>
+        <input type="email" name="user_email" className="contact-input"/>
       </div>
       <div className="contact-label-input-stack">
-        <label>Enter Message</label>
-        <textarea name="message" />
+        <label className="contact-label">Enter Message</label>
+        <Textarea name="message" className="contact-textarea-message"/>
       </div>
       <div>
       <button type="submit" onClick={() => setTimeout(() => setEmailSent(true), 1000)} className="contact-form-send-button">Send</button>
