@@ -15,10 +15,10 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_v83gg4k",
-        "template_8mc8yfr",
+        SERVICE,
+        TEMPLATE,
         form.current,
-        "L957q1-JRrU8r6VO8"
+        PUBLIC_KEY
       )
       .then(
         (result) => {

@@ -1,0 +1,5 @@
+window.env = {
+  "REACT_APP_EMAILJS_SERVICE": "service_v83gg4k",
+  "REACT_APP_EMAILJS_TEMPLATE": "template_8mc8yfr",
+  "REACT_APP_EMAILJS_PUBLIC_KEY": "L957q1-JRrU8r6VO8"
+};
