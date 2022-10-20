@@ -50,3 +50,10 @@ At this point in time I am developing only the bare structure of the website. I 
 10/15/22 - Succesfully learned and implemented the EmailJS contact form add-on. Styled, works and also added a feature using useState() that notifies the user when the email is sent (EmailJS doesn't do that) and also prevents spam-clicking. Upon page reload the user can send another email. As before - I did the bare essentials and all of functionality - the rest is for the designer. Also fixed a few layout issues that occured with the addition of the blog.
 
 10/16/22 - Today I realized that the useState that I implemented earlier actually made EmailJS stop working. I fixed the bug by adding a setTimeout(). I also spent a good 1.5 hours attempting to install and make use of DOTENV but it has become increasingly complicated with newer versions of react. I give up for today but I will attempt again tomorrow. 
+
+10/19/22 - It was a very productive day. I got a lot done and compensated plenty for lost coding time yesterday (video shoot). Here is the list:
+- fixed dotenv bug by deleting dotenv and installing react-dotenv instead. 
+- found and used a new npm package called "react-expanding-textarea" and it is pretty self explanatory.
+- spent this morning studying react spring and animating state-change. Although I don't have a great understanding just yet - I really see the value in knowing how to use this. I have made a spring animation on the contact form, which flips the email card to notify the user that the email was sent. 
+
+TASK FOR TOMORROW: research useRef and find a way to validate emailJS form for empty fields and the @ symbol.
