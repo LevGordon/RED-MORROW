@@ -124,9 +124,7 @@ function NavBar() {
           </div>
         </div>
       </div>
-      <div className="navbar-menu-clicked">
         {desktopMenu}
-      </div>
     </div>
   );
 

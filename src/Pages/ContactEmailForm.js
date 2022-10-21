@@ -61,7 +61,7 @@ const ContactUs = () => {
   const { transform } = useSpring({
     opacity: 1,
     transform: `perspective(600px) rotateY(${emailSent ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80, duration: 900 },
+    config: { mass: 5, tension: 500, friction: 80, duration: 450 },
   })
 
   const emailSentMessage = (
