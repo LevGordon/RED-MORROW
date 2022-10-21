@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useSpring, a } from "react-spring";
 import rmLogoColor from "../photos/rmLogoColor.png";
 import useWindowSize from "../utils/useWindowSize";
 
 function NavBar() {
-  const [height, width] = useWindowSize();
+  const [width] = useWindowSize();
   const Navigate = useNavigate();
 
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
-  console.log(height, width);
+  const props = useSpring({
+    height: menuIsClicked ? 220 : 0,
+    opacity: menuIsClicked ? 1 : 0,
+  })
 
   const NavBarLogo = (
     <div className="navbar-logo">
@@ -25,7 +29,7 @@ function NavBar() {
   );
 
   const desktopMenu = (
-    <div className="footer-links">
+    <a.div style={{ height: props.height, opacity: props.opacity}} className="navbar-menuClicked-container">
       <div className="footer-link-items">
         <h2>OUR ALBUM</h2>
         <Link to="/instigator-of-unexpected-change">
@@ -52,7 +56,8 @@ function NavBar() {
       </div>
       <div className="footer-link-items">
           <h2>BLOG</h2>
-          <Link to="/blog">Most recent articles</Link>
+          <Link to="/blog">Search</Link>
+          <Link to="/blog">Most recent</Link>
         </div>
       <div className="footer-link-items">
         <h2>SOCIALS</h2>
@@ -61,7 +66,7 @@ function NavBar() {
         <Link to="/#">YouTube</Link>
         <Link to="/#">Twitter</Link>
       </div>
-    </div>
+    </a.div>
   );
 
   const desktopNavBar = (
@@ -120,7 +125,7 @@ function NavBar() {
         </div>
       </div>
       <div className="navbar-menu-clicked">
-        {menuIsClicked ? desktopMenu : <></>}
+        {desktopMenu}
       </div>
     </div>
   );

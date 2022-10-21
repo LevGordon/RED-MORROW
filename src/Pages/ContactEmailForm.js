@@ -61,19 +61,17 @@ const ContactUs = () => {
   const { transform } = useSpring({
     opacity: 1,
     transform: `perspective(600px) rotateY(${emailSent ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80 },
+    config: { mass: 5, tension: 500, friction: 80, duration: 900 },
   })
 
   const emailSentMessage = (
-    <a.div style={{ transform}} className="contact-email-was-sent">
+    <a.div style={{transform}} className="contact-email-was-sent">
         <h3 className="contact-success-h3">Your email was sent!</h3>
     </a.div>
   )
 
   const contactForm = (
-    <div style={{
-      transform,
-      rotateY: '180deg',}} className="contact-form" >
+    <div className="contact-form" >
       <form ref={form} onSubmit={contactFormValidation}>
       <div className="contact-label-input-stack">
         <label className="contact-label">Your Name</label>
@@ -85,13 +83,13 @@ const ContactUs = () => {
       </div>
       <div className="contact-label-input-stack">
         <label className="contact-label">Enter Message</label>
-        <Textarea ref={messageRef} name="message" className="contact-textarea-message"/>
+        <Textarea ref={messageRef} name="message" className="contact-textarea-message"/> 
       </div>
       <div className="contact-form-button-div">
       <button type="submit" className="contact-form-send-button">Send</button>
       </div>
     </form>
-      <h5 className="error-message">{errorMessage}</h5>
+      {errorMessage ? <h5 className="error-message">{errorMessage}</h5> : <></> }
 
     </div>
     

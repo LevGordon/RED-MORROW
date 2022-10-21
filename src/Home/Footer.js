@@ -51,7 +51,8 @@ function Footer() {
         </div>
         <div className="footer-link-items">
           <h2>BLOG</h2>
-          <Link to="/blog">Most recent articles</Link>
+          <Link to="/blog">Search</Link>
+          <Link to="/blog">Most recent</Link>
         </div>
         <div className="footer-link-items">
           <h2>SOCIALS</h2>
