@@ -57,3 +57,5 @@ At this point in time I am developing only the bare structure of the website. I 
 - spent this morning studying react spring and animating state-change. Although I don't have a great understanding just yet - I really see the value in knowing how to use this. I have made a spring animation on the contact form, which flips the email card to notify the user that the email was sent. 
 
 TASK FOR TOMORROW: research useRef and find a way to validate emailJS form for empty fields and the @ symbol.
+
+10/20/22 - Task set yesterday successfully accomplished. Form validated for empty fields and proper email format was already enforced by the type="email" atribute of the <input/>. I also animated the navbar menu appearance and fixed a few things here and there. It is a light day. Plans for tomorrow - re-organize the navbar into an actual navbar rather than a copy-pasted footer.
