@@ -5,7 +5,7 @@ import rmLogoColor from "../photos/rmLogoColor.png";
 import useWindowSize from "../utils/useWindowSize";
 
 function NavBar() {
-  const [width] = useWindowSize();
+  const [height, width] = useWindowSize(); // although never used, [height] is important for this to work.
   const Navigate = useNavigate();
 
   const [menuIsClicked, setMenuIsClicked] = useState(false);
