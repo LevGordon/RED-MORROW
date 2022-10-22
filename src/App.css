@@ -32,14 +32,18 @@
 
 .navbar-left {
     display: flex;
+    align-items: center;
 }
 
 .navbar-right {
     display: flex;
+    align-items: center;
 }
 
 .navbar-rm-logo-img {
+    display: flex;
     max-height: 55px;
+    align-items: baseline;
 }
 
 .navbar-button {
@@ -49,9 +53,11 @@
     border-radius: 6px;
 
     padding: 10px;
-    margin: 8px 5px 0 5px;
+    margin: 1px 5px 0 5px;
 
     transition: all 0.5s ease-in-out;
+
+    cursor: pointer;
 }
 
 .navbar-button:hover {
@@ -81,6 +87,8 @@
     text-decoration: none;
     margin-bottom: 8px;
     margin-left: 2px;
+
+    cursor: pointer;
 }
 
 .navbar-link-items a:hover {
@@ -169,6 +177,8 @@
     text-decoration: none;
     margin-bottom: 8px;
     margin-left: 2px;
+
+    cursor: pointer;
 }
 
 .footer-link-items a:hover {
@@ -183,9 +193,6 @@
 .footer-input::placeholder {
     color: #b1b1b1;
 }
-
-
-/* SOCIAL ICONS */
 
 .social-media-wrap {
     display: flex;
@@ -316,6 +323,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .contact-insta-block {
@@ -323,6 +332,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 .contact-success-h3 {
     transform: scaleX(-1);
@@ -365,6 +376,8 @@
     padding: 10px 25px;
     border: 1px solid;
     border-radius: 5px;
+
+    cursor: pointer;
 }
 
 .contact-email-was-sent {

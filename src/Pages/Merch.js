@@ -80,7 +80,7 @@ function Merch() {
         <h1>We are sorry...</h1>
         <h3>
           Red Morrow consists of 3 individuals, without a label or management
-          company backing us fincancially.
+          company backing us financially.
         </h3>
         <h3>
           Currently - we do not have a feasible method of selling and delivering

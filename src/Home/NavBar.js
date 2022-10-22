@@ -10,6 +10,8 @@ function NavBar() {
 
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
+  const closeMenu = () => setMenuIsClicked(false)
+
   const props = useSpring({
     height: menuIsClicked ? 220 : 0,
     opacity: menuIsClicked ? 1 : 0,
@@ -32,32 +34,32 @@ function NavBar() {
     <a.div style={{ height: props.height, opacity: props.opacity}} className="navbar-menuClicked-container">
       <div className="navbar-link-items">
         <h2>OUR ALBUM</h2>
-        <Link to="/instigator-of-unexpected-change">
+        <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
           Instigator of unexpected change
         </Link>
-        <Link to="/instigator-of-unexpected-change/documentary">
+        <Link onClick={closeMenu} to="/instigator-of-unexpected-change/documentary">
           Documentary
         </Link>
-        <Link to="/#">Mourn the Living music video</Link>
-        <Link to="/#">3D Modelled lyric videos</Link>
+        <Link onClick={closeMenu} to="/#">Mourn the Living music video</Link>
+        <Link onClick={closeMenu} to="/#">3D Modelled lyric videos</Link>
       </div>
       <div className="navbar-link-items">
         <h2>MEDIA</h2>
-        <Link to="/music">Music</Link>
-        <Link to="/photo-gallery">Photos</Link>
-        <Link to="/video-gallery">Videos</Link>
-        <Link to="/art">Art</Link>
+        <Link onClick={closeMenu} to="/music">Music</Link>
+        <Link onClick={closeMenu} to="/photo-gallery">Photos</Link>
+        <Link onClick={closeMenu} to="/video-gallery">Videos</Link>
+        <Link onClick={closeMenu} to="/art">Art</Link>
       </div>
       <div className="navbar-link-items">
         <h2>ABOUT</h2>
-        <Link to="/about">About Us</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/shop">Merch Shop</Link>
+        <Link onClick={closeMenu} to="/about">About Us</Link>
+        <Link onClick={closeMenu} to="/contact">Contact</Link>
+        <Link onClick={closeMenu} to="/shop">Merch Shop</Link>
       </div>
       <div className="navbar-link-items">
           <h2>BLOG</h2>
-          <Link to="/blog">Search</Link>
-          <Link to="/blog">Most recent</Link>
+          <Link onClick={closeMenu} to="/blog">Search</Link>
+          <Link onClick={closeMenu} to="/blog">Most recent</Link>
         </div>
       <div className="navbar-link-items">
         <h2>SOCIALS</h2>
@@ -124,7 +126,7 @@ function NavBar() {
           </div>
         </div>
       </div>
-        {width > 768 ? desktopMenu : <></>}
+        {width > 768 && desktopMenu}
     </div>
   );
 
