@@ -30,7 +30,7 @@ function NavBar() {
 
   const desktopMenu = (
     <a.div style={{ height: props.height, opacity: props.opacity}} className="navbar-menuClicked-container">
-      <div className="footer-link-items">
+      <div className="navbar-link-items">
         <h2>OUR ALBUM</h2>
         <Link to="/instigator-of-unexpected-change">
           Instigator of unexpected change
@@ -41,25 +41,25 @@ function NavBar() {
         <Link to="/#">Mourn the Living music video</Link>
         <Link to="/#">3D Modelled lyric videos</Link>
       </div>
-      <div className="footer-link-items">
+      <div className="navbar-link-items">
         <h2>MEDIA</h2>
         <Link to="/music">Music</Link>
         <Link to="/photo-gallery">Photos</Link>
         <Link to="/video-gallery">Videos</Link>
         <Link to="/art">Art</Link>
       </div>
-      <div className="footer-link-items">
+      <div className="navbar-link-items">
         <h2>ABOUT</h2>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/shop">Merch Shop</Link>
       </div>
-      <div className="footer-link-items">
+      <div className="navbar-link-items">
           <h2>BLOG</h2>
           <Link to="/blog">Search</Link>
           <Link to="/blog">Most recent</Link>
         </div>
-      <div className="footer-link-items">
+      <div className="navbar-link-items">
         <h2>SOCIALS</h2>
         <Link to="/#">Instagram</Link>
         <Link to="/#">Facebook</Link>
@@ -124,7 +124,7 @@ function NavBar() {
           </div>
         </div>
       </div>
-        {desktopMenu}
+        {width > 768 ? desktopMenu : <></>}
     </div>
   );
 
