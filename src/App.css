@@ -97,6 +97,28 @@
 }
 
 
+.navbar-mobile-menu-clicked-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-mobile-menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-mobile-menu-links {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar-mobile-menu-links a {
+    margin: 5px 7px;
+}
+
 /* NavBar */
 /* NavBar */
 

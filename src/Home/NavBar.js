@@ -10,10 +10,17 @@ function NavBar() {
 
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
-  const closeMenu = () => setMenuIsClicked(false)
+  const closeMenu = () => {
+    setMenuIsClicked(false)
+  }
 
-  const props = useSpring({
+  const deskNav = useSpring({
     height: menuIsClicked ? 220 : 0,
+    opacity: menuIsClicked ? 1 : 0,
+  })
+
+  const mobNav = useSpring({
+    height: menuIsClicked ? 500 : 0,
     opacity: menuIsClicked ? 1 : 0,
   })
 
@@ -31,7 +38,7 @@ function NavBar() {
   );
 
   const desktopMenu = (
-    <a.div style={{ height: props.height, opacity: props.opacity}} className="navbar-menuClicked-container">
+    <a.div style={{ height: deskNav.height, opacity: deskNav.opacity}} className="navbar-menuClicked-container">
       <div className="navbar-link-items">
         <h2>OUR ALBUM</h2>
         <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
@@ -70,6 +77,59 @@ function NavBar() {
       </div>
     </a.div>
   );
+
+  const mobileMenu = (
+    <a.div style={{ height: mobNav.height, opacity: mobNav.opacity}} className="navbar-mobile-menu-clicked-container">
+      <div className="navbar-mobile-menu-section">
+        <h2>OUR ALBUM</h2>
+        <div className="navbar-mobile-menu-links">
+        <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
+          Instigator of unexpected change
+        </Link>
+        <Link onClick={closeMenu} to="/instigator-of-unexpected-change/documentary">
+          Documentary
+        </Link>
+        <Link onClick={closeMenu} to="/#">Mourn the Living music video</Link>
+        <Link onClick={closeMenu} to="/#">3D Modelled lyric videos</Link>
+        </div>
+        
+      </div>
+      <div className="navbar-mobile-menu-section">
+        <h2>MEDIA</h2>
+        <div className="navbar-mobile-menu-links">
+        <Link onClick={closeMenu} to="/music">Music</Link>
+        <Link onClick={closeMenu} to="/photo-gallery">Photos</Link>
+        <Link onClick={closeMenu} to="/video-gallery">Videos</Link>
+        <Link onClick={closeMenu} to="/art">Art</Link>
+      </div>
+      </div>
+      <div className="navbar-mobile-menu-section">
+        <h2>ABOUT</h2>
+        <div className="navbar-mobile-menu-links">
+        <Link onClick={closeMenu} to="/about">About Us</Link>
+        <Link onClick={closeMenu} to="/contact">Contact</Link>
+        <Link onClick={closeMenu} to="/shop">Merch Shop</Link>
+      </div>
+      </div>
+      <div className="navbar-mobile-menu-section">
+          <h2>BLOG</h2>
+          <div className="navbar-mobile-menu-links">
+          <Link onClick={closeMenu} to="/blog">Search</Link>
+          <Link onClick={closeMenu} to="/blog">Most recent</Link>
+        </div>
+        </div>
+      <div className="navbar-mobile-menu-section">
+        <h2>SOCIALS</h2>
+        <div className="navbar-mobile-menu-links">
+        <Link to="/#">Instagram</Link>
+        <Link to="/#">Facebook</Link>
+        <Link to="/#">YouTube</Link>
+        <Link to="/#">Twitter</Link>
+        </div>
+      </div>
+    </a.div>
+
+  )
 
   const desktopNavBar = (
     <div className="navbar-container">
@@ -138,10 +198,11 @@ function NavBar() {
         </div>
         <div className="navbar-right">
           <div className="navbar-menu">
-            <button className="navbar-button">Menu</button>
+            <button className="navbar-button" onClick={() => setMenuIsClicked(!menuIsClicked)}>Menu</button>
           </div>
         </div>
       </div>
+      {width < 768 && mobileMenu}
     </div>
   );
 
