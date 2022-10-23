@@ -59,3 +59,5 @@ At this point in time I am developing only the bare structure of the website. I 
 TASK FOR TOMORROW: research useRef and find a way to validate emailJS form for empty fields and the @ symbol.
 
 10/20/22 - Task set yesterday successfully accomplished. Form validated for empty fields and proper email format was already enforced by the type="email" atribute of the <input/>. I also animated the navbar menu appearance and fixed a few things here and there. It is a light day. Plans for tomorrow - re-organize the navbar into an actual navbar rather than a copy-pasted footer.
+
+10/21/22 - Plans set yesterday complete! Today I started coding red morrow with the intention of cleaning up the existing navbar and adding an animated mobile navbar menu, yet when I opened up a tutorial to help guide me - the person showcased some cool ideas which I ended up borrowing. Whilst doing so - I realized that the navbar can use some cleanup work and I got to fixing previous poorly written code, as well as utilizing new css styles that I learnt. I also have a generalized idea of what I want it to look like and THAT is my plan for tomorrow.
