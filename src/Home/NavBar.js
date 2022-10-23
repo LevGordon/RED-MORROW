@@ -22,6 +22,7 @@ function NavBar() {
   const mobNav = useSpring({
     height: menuIsClicked ? 500 : 0,
     opacity: menuIsClicked ? 1 : 0,
+    // config: {duration: 600, mass: 5, friction: 100, }
   })
 
   const NavBarLogo = (
@@ -80,6 +81,7 @@ function NavBar() {
 
   const mobileMenu = (
     <a.div style={{ height: mobNav.height, opacity: mobNav.opacity}} className="navbar-mobile-menu-clicked-container">
+      <div className="navbar-mobile-menu-line-break"></div>
       <div className="navbar-mobile-menu-section">
         <h2>OUR ALBUM</h2>
         <div className="navbar-mobile-menu-links">
@@ -92,7 +94,6 @@ function NavBar() {
         <Link onClick={closeMenu} to="/#">Mourn the Living music video</Link>
         <Link onClick={closeMenu} to="/#">3D Modelled lyric videos</Link>
         </div>
-        
       </div>
       <div className="navbar-mobile-menu-section">
         <h2>MEDIA</h2>
@@ -127,6 +128,7 @@ function NavBar() {
         <Link to="/#">Twitter</Link>
         </div>
       </div>
+      <div className="navbar-mobile-menu-line-break"></div>
     </a.div>
 
   )
