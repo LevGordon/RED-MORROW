@@ -25,6 +25,7 @@ function NavBar() {
     // config: {duration: 600, mass: 5, friction: 100, }
   })
 
+
   const NavBarLogo = (
     <div className="navbar-logo">
       <Link to="/" className="social-logo">

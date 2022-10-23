@@ -21,6 +21,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 1px rgb(8, 8, 8);
+
+
 }
 
 .navbar-leftright-wrap {
@@ -483,6 +488,8 @@
 /* NavBar */
 
 .navbar-container {
+    position: relative;
+    top: auto;
     display: flex;
     flex-direction: column;
 }
