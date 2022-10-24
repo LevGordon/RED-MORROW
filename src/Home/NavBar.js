@@ -8,11 +8,22 @@ function NavBar() {
   const [height, width] = useWindowSize(); // although never used, [height] is important for this to work.
   const Navigate = useNavigate();
 
+
+  // hide menu upon click functions
+
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
   const closeMenu = () => {
     setMenuIsClicked(false)
   }
+
+  const navigateAndCloseMenu = (navigateTo) => {
+    setMenuIsClicked(false)
+    setTimeout(() => Navigate(`/${navigateTo}`), 460)
+  }
+
+
+  // react spring animation functions
 
   const deskNav = useSpring({
     height: menuIsClicked ? 220 : 0,
@@ -26,6 +37,8 @@ function NavBar() {
   })
 
 
+  // Logo component
+
   const NavBarLogo = (
     <div className="navbar-logo">
       <Link to="/" className="social-logo">
@@ -33,11 +46,14 @@ function NavBar() {
           src={rmLogoColor}
           alt="Red Morrow Official Logo"
           className="navbar-rm-logo-img"
-          onClick={() => Navigate("/")}
+          onClick={() => navigateAndCloseMenu("")
+          }
         />
       </Link>
     </div>
   );
+
+    // Desktop menu component
 
   const desktopMenu = (
     <a.div style={{ height: deskNav.height, opacity: deskNav.opacity}} className="navbar-menuClicked-container">
@@ -79,6 +95,8 @@ function NavBar() {
       </div>
     </a.div>
   );
+
+    // Mobile menu component
 
   const mobileMenu = (
     <a.div style={{ height: mobNav.height, opacity: mobNav.opacity}} className="navbar-mobile-menu-clicked-container">
@@ -134,6 +152,8 @@ function NavBar() {
 
   )
 
+    // Desktop navbar component
+
   const desktopNavBar = (
     <div className="navbar-container">
       <div className="navbar-leftright-wrap">
@@ -152,21 +172,21 @@ function NavBar() {
           <div className="navbar-music">
             <button
               className="navbar-button"
-              onClick={() => Navigate("/music")}
+              onClick={() => navigateAndCloseMenu("music")}
             >
               {" "}
               Music
             </button>
           </div>
           <div className="navbar-merch">
-            <button className="navbar-button" onClick={() => Navigate("/shop")}>
+            <button className="navbar-button" onClick={() => navigateAndCloseMenu("shop")}>
               Merch
             </button>
           </div>
           <div className="navbar-blog">
             <button
               className="navbar-button"
-              onClick={() => Navigate("/blog")}
+              onClick={() => navigateAndCloseMenu("blog")}
             >
               Blog
             </button>
@@ -174,7 +194,7 @@ function NavBar() {
           <div className="navbar-contact">
             <button
               className="navbar-button"
-              onClick={() => Navigate("/contact")}
+              onClick={() => navigateAndCloseMenu("contact")}
             >
               Contact
             </button>
@@ -182,7 +202,7 @@ function NavBar() {
           <div className="navbar-about-us">
             <button
               className="navbar-button"
-              onClick={() => Navigate("/about")}
+              onClick={() => navigateAndCloseMenu("about")}
             >
               About Us
             </button>
@@ -192,6 +212,9 @@ function NavBar() {
         {width > 768 && desktopMenu}
     </div>
   );
+
+
+  // Mobile navbar component
 
   const mobileNavBar = (
     <div className="navbar-container">
