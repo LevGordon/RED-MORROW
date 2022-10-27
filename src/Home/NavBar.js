@@ -13,6 +13,7 @@ function NavBar() {
 
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
+
   const closeMenu = () => {
     setMenuIsClicked(false)
   }
@@ -23,7 +24,7 @@ function NavBar() {
   }
 
 
-  // react spring animation functions
+  // react spring animation functions for open/close menu
 
   const deskNav = useSpring({
     height: menuIsClicked ? 220 : 0,
@@ -34,6 +35,14 @@ function NavBar() {
     height: menuIsClicked ? 500 : 0,
     opacity: menuIsClicked ? 1 : 0,
     // config: {duration: 600, mass: 5, friction: 100, }
+  })
+
+
+  // react spring function for display none on elements
+
+  const buttonDisplay = useSpring({
+    display: menuIsClicked ? "flex" : "none"
+
   })
 
 
@@ -57,7 +66,7 @@ function NavBar() {
 
   const desktopMenu = (
     <a.div style={{ height: deskNav.height, opacity: deskNav.opacity}} className="navbar-menuClicked-container">
-      <div className="navbar-link-items">
+      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
         <h2>OUR ALBUM</h2>
         <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
           Instigator of unexpected change
@@ -68,25 +77,25 @@ function NavBar() {
         <Link onClick={closeMenu} to="/#">Mourn the Living music video</Link>
         <Link onClick={closeMenu} to="/#">3D Modelled lyric videos</Link>
       </div>
-      <div className="navbar-link-items">
+      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
         <h2>MEDIA</h2>
         <Link onClick={closeMenu} to="/music">Music</Link>
         <Link onClick={closeMenu} to="/photo-gallery">Photos</Link>
         <Link onClick={closeMenu} to="/video-gallery">Videos</Link>
         <Link onClick={closeMenu} to="/art">Art</Link>
       </div>
-      <div className="navbar-link-items">
+      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
         <h2>ABOUT</h2>
         <Link onClick={closeMenu} to="/about">About Us</Link>
         <Link onClick={closeMenu} to="/contact">Contact</Link>
         <Link onClick={closeMenu} to="/shop">Merch Shop</Link>
       </div>
-      <div className="navbar-link-items">
+      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
           <h2>BLOG</h2>
           <Link onClick={closeMenu} to="/blog">Search</Link>
           <Link onClick={closeMenu} to="/blog">Most recent</Link>
         </div>
-      <div className="navbar-link-items">
+      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
         <h2>SOCIALS</h2>
         <Link to="/#">Instagram</Link>
         <Link to="/#">Facebook</Link>
