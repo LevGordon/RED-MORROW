@@ -66,7 +66,7 @@ function NavBar() {
 
   const desktopMenu = (
     <a.div style={{ height: deskNav.height, opacity: deskNav.opacity}} className="navbar-menuClicked-container">
-      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
+      <div className="navbar-link-items" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <h2>OUR ALBUM</h2>
         <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
           Instigator of unexpected change
@@ -77,25 +77,25 @@ function NavBar() {
         <Link onClick={closeMenu} to="/#">Mourn the Living music video</Link>
         <Link onClick={closeMenu} to="/#">3D Modelled lyric videos</Link>
       </div>
-      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
+      <div className="navbar-link-items" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <h2>MEDIA</h2>
         <Link onClick={closeMenu} to="/music">Music</Link>
         <Link onClick={closeMenu} to="/photo-gallery">Photos</Link>
         <Link onClick={closeMenu} to="/video-gallery">Videos</Link>
         <Link onClick={closeMenu} to="/art">Art</Link>
       </div>
-      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
+      <div className="navbar-link-items" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <h2>ABOUT</h2>
         <Link onClick={closeMenu} to="/about">About Us</Link>
         <Link onClick={closeMenu} to="/contact">Contact</Link>
         <Link onClick={closeMenu} to="/shop">Merch Shop</Link>
       </div>
-      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
+      <div className="navbar-link-items" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
           <h2>BLOG</h2>
           <Link onClick={closeMenu} to="/blog">Search</Link>
           <Link onClick={closeMenu} to="/blog">Most recent</Link>
         </div>
-      <div className="navbar-link-items" style={{display: menuIsClicked ? "flex" : "none"}}>
+      <div className="navbar-link-items" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <h2>SOCIALS</h2>
         <Link to="/#">Instagram</Link>
         <Link to="/#">Facebook</Link>
@@ -112,7 +112,7 @@ function NavBar() {
       <div className="navbar-mobile-menu-line-break"></div>
       <div className="navbar-mobile-menu-section">
         <h2>OUR ALBUM</h2>
-        <div className="navbar-mobile-menu-links">
+        <div className="navbar-mobile-menu-links" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
           Instigator of unexpected change
         </Link>
@@ -125,7 +125,7 @@ function NavBar() {
       </div>
       <div className="navbar-mobile-menu-section">
         <h2>MEDIA</h2>
-        <div className="navbar-mobile-menu-links">
+        <div className="navbar-mobile-menu-links" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <Link onClick={closeMenu} to="/music">Music</Link>
         <Link onClick={closeMenu} to="/photo-gallery">Photos</Link>
         <Link onClick={closeMenu} to="/video-gallery">Videos</Link>
@@ -134,7 +134,7 @@ function NavBar() {
       </div>
       <div className="navbar-mobile-menu-section">
         <h2>ABOUT</h2>
-        <div className="navbar-mobile-menu-links">
+        <div className="navbar-mobile-menu-links" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <Link onClick={closeMenu} to="/about">About Us</Link>
         <Link onClick={closeMenu} to="/contact">Contact</Link>
         <Link onClick={closeMenu} to="/shop">Merch Shop</Link>
@@ -142,14 +142,14 @@ function NavBar() {
       </div>
       <div className="navbar-mobile-menu-section">
           <h2>BLOG</h2>
-          <div className="navbar-mobile-menu-links">
+          <div className="navbar-mobile-menu-links" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
           <Link onClick={closeMenu} to="/blog">Search</Link>
           <Link onClick={closeMenu} to="/blog">Most recent</Link>
         </div>
         </div>
       <div className="navbar-mobile-menu-section">
         <h2>SOCIALS</h2>
-        <div className="navbar-mobile-menu-links">
+        <div className="navbar-mobile-menu-links" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <Link to="/#">Instagram</Link>
         <Link to="/#">Facebook</Link>
         <Link to="/#">YouTube</Link>
