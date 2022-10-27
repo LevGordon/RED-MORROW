@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useSpring, a } from "react-spring";
 import rmLogoColor from "../photos/rmLogoColor.png";
@@ -37,14 +37,21 @@ function NavBar() {
     // config: {duration: 600, mass: 5, friction: 100, }
   })
 
+  let navbarMenuRef = useRef()
 
-  // react spring function for display none on elements
+  useEffect(() => {
+    let outsideClickHandler = (event) => {
+      if(!navbarMenuRef.current.contains(event.target)) {
+        setMenuIsClicked(false)
+      }
+    }
 
-  const buttonDisplay = useSpring({
-    display: menuIsClicked ? "flex" : "none"
+    document.addEventListener('mousedown', outsideClickHandler)
 
+    return () => {
+      document.removeEventListener('mousedown', outsideClickHandler)
+    }
   })
-
 
   // Logo component
 
@@ -65,7 +72,7 @@ function NavBar() {
     // Desktop menu component
 
   const desktopMenu = (
-    <a.div style={{ height: deskNav.height, opacity: deskNav.opacity}} className="navbar-menuClicked-container">
+    <a.div style={{ height: deskNav.height, opacity: deskNav.opacity}} className="navbar-menuClicked-container" ref={navbarMenuRef}>
       <div className="navbar-link-items" style={{pointerEvents: menuIsClicked ? "auto" : "none"}}>
         <h2>OUR ALBUM</h2>
         <Link onClick={closeMenu} to="/instigator-of-unexpected-change">
@@ -108,7 +115,7 @@ function NavBar() {
     // Mobile menu component
 
   const mobileMenu = (
-    <a.div style={{ height: mobNav.height, opacity: mobNav.opacity}} className="navbar-mobile-menu-clicked-container">
+    <a.div style={{ height: mobNav.height, opacity: mobNav.opacity}} className="navbar-mobile-menu-clicked-container" ref={navbarMenuRef}>
       <div className="navbar-mobile-menu-line-break"></div>
       <div className="navbar-mobile-menu-section">
         <h2>OUR ALBUM</h2>
