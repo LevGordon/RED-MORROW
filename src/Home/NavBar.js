@@ -38,10 +38,11 @@ function NavBar() {
   })
 
   let navbarMenuRef = useRef()
+  let menuButtonRef = useRef()
 
   useEffect(() => {
     let outsideClickHandler = (event) => {
-      if(!navbarMenuRef.current.contains(event.target)) {
+      if(!navbarMenuRef.current.contains(event.target) && !menuButtonRef.current.contains(event.target)) {
         setMenuIsClicked(false)
       }
     }
@@ -174,7 +175,7 @@ function NavBar() {
     <div className="navbar-container">
       <div className="navbar-leftright-wrap">
         <div className="navbar-left">
-          <div className="navbar-menu">
+          <div className="navbar-menu" ref={menuButtonRef}>
             <button
               className="navbar-button"
               onClick={() => setMenuIsClicked(!menuIsClicked)}
@@ -239,7 +240,7 @@ function NavBar() {
           {NavBarLogo}
         </div>
         <div className="navbar-right">
-          <div className="navbar-menu">
+          <div className="navbar-menu" ref={menuButtonRef}>
             <button className="navbar-button" onClick={() => setMenuIsClicked(!menuIsClicked)}>Menu</button>
           </div>
         </div>
