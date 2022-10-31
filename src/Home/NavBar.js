@@ -9,7 +9,7 @@ function NavBar() {
   const Navigate = useNavigate();
 
 
-  // hide menu upon click functions
+  // hide menu upon button click functions
 
   const [menuIsClicked, setMenuIsClicked] = useState(false);
 
@@ -19,7 +19,7 @@ function NavBar() {
   }
 
   const navigateAndCloseMenu = (navigateTo) => {
-    setMenuIsClicked(false)
+    closeMenu()
     setTimeout(() => Navigate(`/${navigateTo}`), 460)
   }
 
@@ -36,6 +36,9 @@ function NavBar() {
     opacity: menuIsClicked ? 1 : 0,
     // config: {duration: 600, mass: 5, friction: 100, }
   })
+
+
+  // Condition if clicked outside of menu box
 
   let navbarMenuRef = useRef()
   let menuButtonRef = useRef()
