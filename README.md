@@ -67,3 +67,5 @@ TASK FOR TOMORROW: research useRef and find a way to validate emailJS form for e
 10/23/22 - Deployed the app in Heroku to allow the designer free roam over the site and for him to start assimilating the ideas I have in mind to add to them. I also noticed that the navbar menu does not close when the top navbar buttons and logo are clicked - fixed that.
 
 10/26/22 - Worked on fixing the NavBar bug where buttons are still clickable despite being hidden (opacity does not remove the objects). Found three different solutions and tried each one until figuring out the best for this project. Once fixed, I implemented a feature that closes the menu when user clicks anywhere else on screen (implying that they no longer need the menu). Initially committed with faulty logic that clashed with pre-existing menu button onClick logic, which I later fixed and also implemented for the mobile version of the navbar too.
+
+10/28/22 - Fixed that stinky bug where the react app rendered within a screen of the html body. Set margin and padding of body to 0 and fixed. Changed css accordingly.
