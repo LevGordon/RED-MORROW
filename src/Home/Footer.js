@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import rmLogoColor from "../photos/rmLogoColor.png";
 
-
 function Footer() {
   const footerElement = (
     <div className="footer-container">
@@ -62,20 +61,20 @@ function Footer() {
           <Link to="/#">Twitch</Link>
         </div>
       </div>
-        <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to="/">
-              <img
-                src={rmLogoColor}
-                alt="Red Morrow Official Logo"
-                className="footer-rm-logo-img"
-              />
-            </Link>
-          </div>
-          <div>
-            <small className="website-rights">Red Morrow © 2022</small>
-          </div>  
+      <div className="social-media-wrap">
+        <div className="footer-logo">
+          <Link to="/">
+            <img
+              src={rmLogoColor}
+              alt="Red Morrow Official Logo"
+              className="footer-rm-logo-img"
+            />
+          </Link>
         </div>
+        <div>
+          <small className="website-rights">Red Morrow © 2022</small>
+        </div>
+      </div>
     </div>
   );
 

@@ -1,6 +1,6 @@
 import React from "react";
-import gmailLogo from '../photos/gmail-logo.png'
-import instaLogo from '../photos/insta-logo.png'
+import gmailLogo from "../photos/gmail-logo.png";
+import instaLogo from "../photos/insta-logo.png";
 import ContactUs from "./ContactEmailForm";
 
 function Contact() {
@@ -11,11 +11,19 @@ function Contact() {
       </div>
       <div className="contact-two-blocks">
         <div className="contact-gmail-block">
-          <img src={gmailLogo} className="contact-image" alt="Contact Red Morrow Gmail"/>
+          <img
+            src={gmailLogo}
+            className="contact-image"
+            alt="Contact Red Morrow Gmail"
+          />
           <p>redmorrowband@gmail.com</p>
         </div>
         <div className="contact-insta-block">
-          <img src={instaLogo} className="contact-image" alt="Contact Red Morrow Instagram"/>
+          <img
+            src={instaLogo}
+            className="contact-image"
+            alt="Contact Red Morrow Instagram"
+          />
           <p>@redmorrowband</p>
         </div>
       </div>
@@ -24,7 +32,10 @@ function Contact() {
       </div>
       <ContactUs />
       <div className="contact-appreciation-text">
-        <h3>We appreciate all messages! Say anything you want, ask anything you want!</h3>
+        <h3>
+          We appreciate all messages! Say anything you want, ask anything you
+          want!
+        </h3>
       </div>
     </div>
   );

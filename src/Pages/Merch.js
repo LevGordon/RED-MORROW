@@ -6,9 +6,9 @@ import useWindowSize from "../utils/useWindowSize";
 
 function Merch() {
   const { ciconiaBlack, happyLifeWhite, instigatorPurple } = MerchCardInfo;
-  const [width, height] = useWindowSize()
+  const [width, height] = useWindowSize();
 
-  console.log(width, height)
+  console.log(width, height);
 
   const desktopMerchShop = (
     <div className="merch-item-container">
@@ -45,7 +45,7 @@ function Merch() {
   const mobileMerchShop = (
     <div className="merch-item-container">
       <div className="merch-triple-stack">
-      <MerchItemCard
+        <MerchItemCard
           name={ciconiaBlack.name}
           image={ciconiaBlack.image}
           color={ciconiaBlack.color}
@@ -69,10 +69,9 @@ function Merch() {
           sizes={instigatorPurple.sizes}
           price={instigatorPurple.price}
         />
-        </div>
+      </div>
     </div>
-
-  )
+  );
 
   return (
     <div className="merch-main-container">
