@@ -69,3 +69,9 @@ TASK FOR TOMORROW: research useRef and find a way to validate emailJS form for e
 10/26/22 - Worked on fixing the NavBar bug where buttons are still clickable despite being hidden (opacity does not remove the objects). Found three different solutions and tried each one until figuring out the best for this project. Once fixed, I implemented a feature that closes the menu when user clicks anywhere else on screen (implying that they no longer need the menu). Initially committed with faulty logic that clashed with pre-existing menu button onClick logic, which I later fixed and also implemented for the mobile version of the navbar too.
 
 10/28/22 - Fixed that stinky bug where the react app rendered within a screen of the html body. Set margin and padding of body to 0 and fixed. Changed css accordingly.
+
+10/31/22 - Selectively handpicked the best photos that we have and uploaded it to the website and later git. Deleted basic files that were unused since the initial create-react-app. I also started making the skeleton for the photo-gallery page. I have not settled on a design yet - but I know that I want to do the following:
+- allow users to browse organized photo collections, organized by event.
+- allow users to browse chaotically and with no order.
+
+The issue with this is displaying it on the page in such a manner that won't take away from simplicity and will NOT feel overcrowded. I know that it is best if I spend some time looking at how others accomplish this task and then have another crack at it tomorrow.
