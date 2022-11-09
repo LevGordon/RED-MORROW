@@ -2,7 +2,10 @@ import React from 'react'
 
 function VideoGallery() {
   return (
-    <div>VideoGallery</div>
+    <div>
+      
+      <iframe className='video-gallery-video' src='https://www.youtube.com/embed/H8Cgbmc5vVo' title='videotest' allowFullScreen></iframe>
+    </div>
   )
 }
 
