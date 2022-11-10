@@ -472,11 +472,31 @@ body {
 
 
 
+/* VIDEOGALLERY */
+/* VIDEOGALLERY */
 
+.video-gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.video-gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.video-gallery-video {
+    width: 40vw;
+    max-height: 20vh;
+    height: 20vh;
+}
 
-
+/* VIDEOGALLERY */
+/* VIDEOGALLERY */
 
 
 
