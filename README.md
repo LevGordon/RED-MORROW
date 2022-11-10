@@ -75,3 +75,5 @@ TASK FOR TOMORROW: research useRef and find a way to validate emailJS form for e
 - allow users to browse chaotically and with no order.
 
 The issue with this is displaying it on the page in such a manner that won't take away from simplicity and will NOT feel overcrowded. I know that it is best if I spend some time looking at how others accomplish this task and then have another crack at it tomorrow.
+
+11/08/22 - I know I promised to "have a crack" over a week ago, yet so many things came up that I couldn't attend to the website at all. Anyhow, I did the bare minimum today, pretty much just glancing at what already is and thinking how to go forward. I also managed to embed a youtube video which is the whole functionality of the video-gallery, documentary, music video and etc pages. Big day tomorrow :)
