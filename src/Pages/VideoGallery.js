@@ -54,10 +54,8 @@ const videos = [
   },
 ];
 
-function VideoGallery() {
-  return (
-    <div className="video-gallery-container">
-      {videos.map((video) => {
+const videoRender = (
+      videos.map((video) => {
         return (
           <div className="video-gallery-item">
             <h2 className="video-gallery-video-title">{video.title}</h2>
@@ -72,7 +70,15 @@ function VideoGallery() {
             </p>
           </div>
         );
-      })}
+      })
+)
+
+function VideoGallery() {
+  return (
+    <div className="video-gallery-container">
+      <h1>RED MORROW VIDEO GALLERY</h1>
+      <h3>SEARCH</h3>
+      {videoRender}
     </div>
   );
 }

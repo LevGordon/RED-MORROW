@@ -490,9 +490,10 @@ body {
 }
 
 .video-gallery-video {
-    width: 40vw;
-    max-height: 20vh;
-    height: 20vh;
+    aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+
 }
 
 /* VIDEOGALLERY */
